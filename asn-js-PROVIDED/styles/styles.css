@@ -1,4 +1,4 @@
-/************* your name: 
+/************* your name: ANA ALARCON
 
 INSTRUCTIONS:
 Comments starting with TO-DO have been included in this file to describe the needed styling: please translate these to the appropriate CSS declarations. 
@@ -24,7 +24,10 @@ body {
 
 /* TO DO: all elements with the .flex class applied are to be made into flex-box containers. */
 
-
+.flex
+{
+    display: flex;
+}
  
 
 /************* site-wide text styling *************/
@@ -42,11 +45,50 @@ body {
         - change the cursor to pointer.
 */
 
+h1
+{
+    font-size:  48px;
+    margin: 0 auto;
+}
 
+h2
+{
+    font-size: 36px;
+    margin-bottom: 12px;
+}
 
+.large-text
+{
+    font-size: 24px;
+}
 
+.fake-button
+{
+    background-color: #E5AF42;
+    text-align: center;
+    line-height: 3px;
+    border: solid black;
+    border-width: 1 px;
+}
 
+a
+{
+    text-decoration: none;
+    color: black;
+}
 
+main a:hover, footer a:hover
+{
+    text-decoration: underline;
+}
+
+.fake-button:hover, .blue-hover:hover
+{
+    text-decoration: underline;
+    background-color: #4278e5;
+    color: white;
+    cursor: pointer;
+}
 
 
 /************* header/footer styling *************/
@@ -58,12 +100,42 @@ body {
     - there will be 25px of space between the header and main, and 50px of space between main and footer.
     - the footer will be 60px tall, have a font-weight of 200, and the text within will be centered vertically and horizontally.
 */
+header, footer
+{
+    background-color: #E5AF42;
+    margin-bottom: 25px;
+}
 
+header
+{
+    line-height: 150px;
+    
+}
 
+header img
+{
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+}
 
+header h1
+{
+    text-align: center;
+    width: 850px;
+}
 
+main
+{
+    margin-bottom: 50px;
+}
 
-
+footer
+{
+    height: 60px;
+    font-weight: 200px;
+    margin: 0 auto;
+}
 /************* index page *************/
 
 /* TO-DO: 
@@ -74,9 +146,39 @@ body {
     - the pair of fake-buttons will be centered on the page. HINT: can calculate the required margin to make them appear to be centered.
 */
 
+#index h2
+{
+    line-height: 36px;
+}
 
+#index p
+{
+    margin-bottom: 12px;
+}
 
+.index
+{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.index img
+{
+    width: 300px;
+    padding: 0px 25px 50px 25px;
+}
 
+.fake-button, large-text
+{
+    width: 250px;
+    margin: 0 auto;
+    line-height: 60px;
+}
+
+#index footer
+{
+    text-align: center;
+    padding: 20px;
+}
 
 
 /************* bookings page *************/
@@ -93,9 +195,62 @@ body {
 
 */
 
+#booking
+{
+    width: 600px;
+    margin: 0 auto;
+    font-size: 18px;
+    text-align: center;
+    
+}
+#booking header
+{
+    line-height: 100px;
+    text-align: justify;
+}
+.day-selector
+{
+    justify-content: center;
+}
 
+#booking .day-selectors .blue-hover
+{
+    margin-bottom: 12px;
+    
+    margin: 10px;
+    display: inline-block;
+    text-align: left;
+}
 
+#booking .small-button, .blue-hover
+{
+    border: solid black 1px;
+    width: 60px;
+    margin: 10px;
+}
 
+.small-button
+{
+    padding: 5px;
+}
+
+.top-margin
+{
+    margin: 24px 0px 12px 0px;
+}
+
+#clear-button
+{
+    width: 200px;
+    margin: 0 auto;
+
+}
+/*
+.clicked
+{
+    background-color: #E5AF42;
+    ;
+}  */
 
 
 
@@ -115,5 +270,9 @@ body {
 */
 
 
-
+.contact
+{
+    height: 420px;
+    text-align: center;
+}
 
