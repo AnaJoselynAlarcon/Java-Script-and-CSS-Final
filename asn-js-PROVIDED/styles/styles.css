@@ -104,6 +104,7 @@ header, footer
 {
     background-color: #E5AF42;
     margin-bottom: 25px;
+    
 }
 
 header
@@ -245,12 +246,11 @@ footer
     margin: 0 auto;
 
 }
-/*
+
 .clicked
 {
     background-color: #E5AF42;
-    ;
-}  */
+}  
 
 
 
@@ -263,10 +263,19 @@ footer
 /************* contact page *************/
 /* TO DO:
     - the main section of the .contact page will be 420px tall, and centered.
-    - the contents will be 2 columns: the labels column is 150px wide and right-aligned, and the input column is 300px wide. There will be 24px of space between the columns, and the pair of columns will be centered on the page.
+    - the contents will be 2 columns: the labels column is 150px wide
+    and right-aligned, 
+    and the input column is 300px wide.
+     There will be 24px of space between the columns,
+      and the pair of columns will be centered on the page.
     - the textarea element will be 150px tall.
-    - all form input, textarea, and and button elements will have the same font as the rest of the page, a line-height of 24px, a font-size of 16px, and the same border as other buttons on the site. There will be 24px of space below each of these elements.
-    - the edges of the button will line up exactly with the text-area element. HINT: time for some math!
+    - all form input, textarea, and and button elements will have 
+    the same font as the rest of the page, a line-height of 24px,
+     a font-size of 16px, 
+     and the same border as other buttons on the site.
+      There will be 24px of space below each of these elements.
+    - the edges of the button will line up exactly with the
+     text-area element. HINT: time for some math!
 */
 
 
@@ -276,3 +285,49 @@ footer
     text-align: center;
 }
 
+#contactPage .flex label
+{
+    width: 150px;
+    align-content: flex-end;
+}
+
+#contactPage .flex input
+{
+    width: 300px;
+}
+
+#contactPage .flex
+{
+    /* margin: 24px; */
+    justify-content: center;
+}
+
+#contactPage textarea
+{
+    height: 150px;
+    width: 300px;
+}
+
+#contactPage input, textarea, button
+{
+    line-height:24px;
+    font-size: 16px;
+    border: solid black 1px;
+    margin-bottom: 24px;
+}
+
+#contactPage button
+{
+    width: 300px;
+    margin: 0px 0px 0px 150px;
+    margin-bottom: 24px;
+}
+
+#contactPage footer
+{
+    text-align: center;
+    margin-top: 50px;
+    height: 60px;
+    font-weight: 200px;
+    padding: 25px;
+}
