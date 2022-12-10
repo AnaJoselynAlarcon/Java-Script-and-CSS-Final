@@ -68,7 +68,7 @@ h2
     text-align: center;
     line-height: 3px;
     border: solid black;
-    border-width: 1 px;
+    border-width: 1px;
 }
 
 a
@@ -134,8 +134,9 @@ main
 footer
 {
     height: 60px;
-    font-weight: 200px;
-    margin: 0 auto;
+    font-weight: 200;
+    text-align: center;
+    padding: 30px;
 }
 /************* index page *************/
 
@@ -202,6 +203,7 @@ footer
     margin: 0 auto;
     font-size: 18px;
     text-align: center;
+    padding: 30px 0 50px 0;
     
 }
 #booking header
@@ -217,7 +219,6 @@ footer
 #booking .day-selectors .blue-hover
 {
     margin-bottom: 12px;
-    
     margin: 10px;
     display: inline-block;
     text-align: left;
@@ -328,6 +329,6 @@ footer
     text-align: center;
     margin-top: 50px;
     height: 60px;
-    font-weight: 200px;
+    font-weight: 200;
     padding: 25px;
 }

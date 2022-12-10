@@ -11,7 +11,7 @@ var button = document.getElementById("submit-button");
 function GoodDogSumbit()
 {
     var message = document.getElementById("contact-page");
-    message.innerHTML =  "Thank You";
+    message.innerHTML =  "Thank You for your message!";
     message.style.fontSize="24px";
 }
 

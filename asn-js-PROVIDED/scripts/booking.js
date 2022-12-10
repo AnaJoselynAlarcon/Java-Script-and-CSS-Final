@@ -38,10 +38,10 @@ function ColourChange()
 
     else 
     {this.classList.add("clicked");
-    number_of_days = number_of_days +1
+    number_of_days = number_of_days +1;
     //number_of_days ++
     }
-    calculate()
+    calculate();
 
 }
 
@@ -50,8 +50,8 @@ tuesday.addEventListener("click", ColourChange);
 wednesday.addEventListener("click", ColourChange);
 thursday.addEventListener("click", ColourChange);
 friday.addEventListener("click", ColourChange);
-fullDay.addEventListener("click", ColourChange);
-halfDay.addEventListener("click", ColourChange);
+// fullDay.addEventListener("click", ColourChange);
+// halfDay.addEventListener("click", ColourChange);
 
 //click is a keyword
 //event listener for all of them
@@ -87,7 +87,7 @@ function clearDays()
 // }
 
 
-clear.addEventListener("click", clearDays)
+clear.addEventListener("click", clearDays);
 
 /********* change rate *********/
 // when the half-day button is clicked,
@@ -98,14 +98,16 @@ var halfDay = document.getElementById("half");
 
 function halfRate()
 {
-    if(halfDay == "half")
+    if(halfDay.innerHTML == "half")
     {
-        var fullDay = document.getElementById("full");
+        halfDay.classList.add("clicked");
         fullDay.classList.remove("clicked");
-        cost_per_day = 20;}
+        cost_per_day = 20;
+    }
     else
     {
         halfDay.classList.remove("clicked");
+        fullDay.classList.add("clicked");
         cost_per_day = 35;
     }
 
@@ -114,7 +116,7 @@ function halfRate()
     // number_of_days = number_of_days +1
     // //number_of_days ++
     // }
-    calculate()
+    calculate();
 
 }
 if(halfDay)
@@ -152,9 +154,9 @@ var cost = document.getElementById("calculated-cost");
 function calculate()
 {
     var cost_text = document.getElementById("calculated-cost");
-        cost_text = cost_per_day * parseInt(number_of_days);
+        cost_text.innerHTML = cost_per_day * parseInt(number_of_days);
         
-        document.getElementById("calculated-cost").innerHTML = cost_text;
+        //document.getElementById("calculated-cost").innerHTML = cost_text;
 }
 
 if(cost)
